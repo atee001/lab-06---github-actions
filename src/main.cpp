@@ -6,7 +6,7 @@ int main(){
 
 	Rectangle* r = new Rectangle();
 	cout << "Rectangle area : " << r->area() << endl;
-
+	delete r;
 
 return 0;
 }
