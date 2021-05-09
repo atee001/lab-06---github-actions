@@ -31,10 +31,10 @@ jobs:
         run: cmake .
         
       - name: Make
-        run: make rectangle
+        run: make test
         
-      - name: Execute rectangle executable
-        run: ./rectangle
+      - name: Execute test executable
+        run: ./test
         
       # Runs a single command using the runners shell
       #- name: Run a one-line script
