@@ -6,7 +6,10 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
+<<<<<<< HEAD
     branches: [ main, CJT578078/passing_tests, atee001/failing_tests ] #ATee001/Fail
+
+>>>>>>> 809379aedd2a7649b317039cf01df9f7b2b8f10d
   pull_request:
     branches: [ main ]
 
@@ -24,17 +27,19 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+<<<<<<< HEAD
         -name: submodule
                 run: git submodule update --init --recursive 
            
+>>>>>>> 809379aedd2a7649b317039cf01df9f7b2b8f10d
       - name: Build CMake
         run: cmake .
         
       - name: Make
-        run: make rectangle
+        run: make test
         
-      - name: Execute rectangle executable
-        run: ./rectangle
+      - name: Execute test executable
+        run: ./test
         
       # Runs a single command using the runners shell
       #- name: Run a one-line script

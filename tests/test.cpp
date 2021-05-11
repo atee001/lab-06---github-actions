@@ -1,6 +1,7 @@
 #include "../header/rectangle.hpp"
+#include "constr_test.hpp"
 
-
+#include "area_test.hpp"
 #include "gtest/gtest.h"
 #include "peri_test.hpp"
 
