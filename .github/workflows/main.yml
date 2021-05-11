@@ -26,10 +26,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+<<<<<<< HEAD
 
-        with:
-                submodules: recursive
-
+        -name: submodule
+                run: git submodule update --init --recursive 
+           
+>>>>>>> CJT578078/passing_tests
       - name: Build CMake
         run: cmake .
         
