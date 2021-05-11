@@ -11,7 +11,6 @@ ADD_EXECUTABLE(rectangle
 
 ADD_EXECUTABLE(test
    tests/test.cpp
-   src/rectangle.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
